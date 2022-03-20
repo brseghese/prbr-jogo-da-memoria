@@ -2,7 +2,7 @@
 
 Repositório do projeto **Jogo da Memória** proposto no curso de Desenvolvimento Web Full Stack (Programdor Br).
 
-## 🎯 Menu
+### 🎯 Menu
 
 <details>
 <summary>Clique para expandir</summary>
@@ -66,7 +66,6 @@ Em construção, novas funcionalidades serão adicionadas. 🚧
 
 - Criar página Start Game com nível de dificulade.
 - Adicionar som, dark mode e light mode.
-- Responsividade.
 
 <h3 id="autor">✒️ Autor</h3>
 
