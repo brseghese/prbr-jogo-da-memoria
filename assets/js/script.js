@@ -8,12 +8,11 @@ const cardCheck = document.getElementById("card-check");
 const cardWin = document.getElementById("card-win");
 const cardStart = document.getElementById("card-start");
 
-// startGame();
-
 function startGame() {
   let gameStartLayer = document.getElementById("gameStart");
   gameStartLayer.style.display = "none";
   cardStart.play();
+  startTime();
   initializeCards(game.createCardsFromTechs());
 }
 
@@ -73,7 +72,16 @@ function flipCard() {
         if (game.checkGameOver()) {
           let gameOverLayer = document.getElementById("gameOver");
           gameOverLayer.style.display = "flex";
+
           cardWin.play();
+          pauseTime();
+
+          let resultadoP = document.getElementById("resultado");
+          resultadoP.textContent = `Parabéns! Tempo de jogo: ${calculateTime(
+            time
+          )}`;
+
+          stopTime();
         }
       } else {
         setTimeout(() => {
@@ -95,6 +103,43 @@ function restart() {
   cardStart.play();
   let gameOverLayer = document.getElementById("gameOver");
   gameOverLayer.style.display = "none";
+}
+
+// ----------------------------------------------
+
+let interval;
+let time = 0;
+let timeP = document.getElementById("time");
+
+// startTime();
+
+function startTime() {
+  let startTime = Date.now() - time;
+  interval = setInterval(() => {
+    time = Date.now() - startTime;
+    timeP.textContent = calculateTime(time);
+  }, 1000);
+}
+
+function pauseTime() {
+  clearInterval(interval);
+  timeP.textContent = calculateTime(time);
+}
+
+function stopTime() {
+  time = 0;
+  clearInterval(interval);
+  timeP.textContent = "00:00";
+}
+
+function calculateTime(time) {
+  let totalSeconds = Math.floor(time / 1000);
+  let totalMinutes = Math.floor(totalSeconds / 60);
+
+  let displaySeconds = (totalSeconds % 60).toString().padStart(2, "0");
+  let displayMinutes = totalMinutes.toString().padStart(2, "0");
+
+  return `${displayMinutes}:${displaySeconds}`;
 }
 
 // ----------------------------------------------

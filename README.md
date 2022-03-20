@@ -53,8 +53,14 @@ Não há necessidade de instalação, clique em [Start Game](https://brseghese.g
 ✅ Quando todas as cartas estão abertas, formando todos os pares, o jogo é finalizado. <br>
 ✅ Finalizado o jogo é exibida a página Game Over com botão restart. <br>
 ✅ No CSS foi utilizado FlexBox e Grid Layout. <br>
-✅ Para criar perspectiva 3D na carta foi utilizado a propriedade CSS: `transform-style: preserv-3d;`. <br>
-✅ Responsivo. <br>
+✅ Para criar perspectiva 3D na carta foi utilizado a propriedade CSS: `transform-style: preserv-3d;`. <br><br>
+
+<h3 id="extra">😎 Funcionalidades Extras<h3>
+✅ Criei uma página para o Start Game. <br>
+✅ Criei um preview das cartas abertas de 3 segundos no início do jogo. <br>
+✅ Adicionei áudio no ínicio e fim de jogo, quando abre cartas e formam pares. <br>
+✅ Desenvolvi o tempo de jogo, exibindo no layout e o total no final do jogo. <br>
+✅ Tratei da responsividade. <br>
 
 <h3 id="preview">🎥 Preview</h3>
 
@@ -63,9 +69,6 @@ Não há necessidade de instalação, clique em [Start Game](https://brseghese.g
 <h3 id="status">📌 Status do projeto</h3>
 
 Em construção, novas funcionalidades serão adicionadas. 🚧
-
-- Criar página Start Game com nível de dificulade.
-- Adicionar som, dark mode e light mode.
 
 <h3 id="autor">✒️ Autor</h3>
 

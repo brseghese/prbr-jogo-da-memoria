@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-  <title>Memory Game</title>
+  <title>Jogo da Memória</title>
 </head>
 
 <body>
@@ -30,9 +30,11 @@
     </div> -->
   </div>
 
+  <div id="time">00:00</div>
+
   <div id="gameOver">
     <div class="mensagem">
-      <p>Parabéns, você completou o jogo!</p>
+      <p id="resultado"></p>
       <button id="restart" onclick="restart()">Start Game</button>
     </div>
   </div>
