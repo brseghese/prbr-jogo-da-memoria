@@ -2,8 +2,10 @@
 
 Repositório do projeto **Jogo da Memória** proposto no curso de Desenvolvimento Web Full Stack (Programdor Br).
 
+## 🎯 Menu
+
 <details>
-<summary>🎯 Menu - clique para expandir</summary>    
+<summary>Clique para expandir</summary>
 ◽ <a href="#inicio">Início</a> <br>
 ◽ <a href="#pre-requisitos">Pré-requisitos</a> <br>
 ◽ <a href="#acessar-projeto">Acessar Projeto</a> <br>
@@ -52,6 +54,7 @@ Não há necessidade de instalação, clique em [Start Game](https://brseghese.g
 ✅ Finalizado o jogo é exibida a página Game Over com botão restart. <br>
 ✅ No CSS foi utilizado FlexBox e Grid Layout. <br>
 ✅ Para criar perspectiva 3D na carta foi utilizado a propriedade CSS: `transform-style: preserv-3d;`. <br>
+✅ Responsivo. <br>
 
 <h3 id="preview">🎥 Preview</h3>
 

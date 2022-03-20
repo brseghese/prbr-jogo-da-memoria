@@ -14,11 +14,16 @@ body {
 }
 
 .card {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   position: relative;
   transform-style: preserve-3d; /* faz com que indentifique o flip deixando o card 3d */
   transition: transform 0.5s;
+}
+
+.icon {
+  width: 110px;
+  height: 110px;
 }
 
 .card_back,
@@ -72,8 +77,59 @@ body {
 }
 
 #gameBoard {
-  max-width: 700px;
+  max-width: 960px;
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
+}
+
+@media (max-width: 1400px) {
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+  .icon {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 110px;
+    height: 110px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  #gameBoard {
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  #gameBoard {
+    gap: 10px;
+  }
+  .card {
+    width: 70px;
+    height: 70px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
 }
