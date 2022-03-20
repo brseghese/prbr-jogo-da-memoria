@@ -12,6 +12,7 @@ Repositório do projeto **Jogo da Memória** proposto no curso de Desenvolviment
 ◽ <a href="#instalacao">Instalação</a> <br>
 ◽ <a href="#tecnologias">Tecnologias</a> <br>
 ◽ <a href="#sobre">Sobre</a> <br>
+◽ <a href="#extras">Extras</a> <br>
 ◽ <a href="#preview">Preview</a> <br>
 ◽ <a href="#status">Status do Projeto</a> <br>
 ◽ <a href="#autor">Autor</a> <br>
@@ -55,7 +56,8 @@ Não há necessidade de instalação, clique em [Start Game](https://brseghese.g
 ✅ No CSS foi utilizado FlexBox e Grid Layout. <br>
 ✅ Para criar perspectiva 3D na carta foi utilizado a propriedade CSS: `transform-style: preserv-3d;`. <br><br>
 
-<h3 id="extra">😎 Funcionalidades Extras<h3>
+<h3 id="extras">📢 Extras</h3>
+
 ✅ Criei uma página para o Start Game. <br>
 ✅ Criei um preview das cartas abertas de 3 segundos no início do jogo. <br>
 ✅ Adicionei áudio no ínicio e fim de jogo, quando abre cartas e formam pares. <br>
@@ -68,13 +70,13 @@ Não há necessidade de instalação, clique em [Start Game](https://brseghese.g
 
 <h3 id="status">📌 Status do projeto</h3>
 
-Em construção, novas funcionalidades serão adicionadas. 🚧
+Em fase de testes. 🚧
 
 <h3 id="autor">✒️ Autor</h3>
 
 <a href="https://github.com/brseghese"> <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80193824?v=4" width="100px;" alt="Personal photo"/> </a>
 
-[Clique aqui](https://brseghese.github.io)🔗 e acesse meu portfólio! 💼 <br>
+[Clique aqui](https://brseghese.github.io)🔗 e acesse meu portfólio! 💼 (em construção...) <br>
 Desenvolvido com ❤️ por **Bruno Seghese** © Alguns direitos reservados.
 
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brunoseghese/) [![Github Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brseghese) [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brseghese@gmail.com)
