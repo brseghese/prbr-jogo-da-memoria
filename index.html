@@ -12,6 +12,13 @@
 </head>
 
 <body>
+  <div id="gameStart">
+    <div class="mensagem">
+      <p>Jogo da Memória</p>
+      <button id="start" onclick="startGame()">Start Game</button>
+    </div>
+  </div>
+
   <div id="gameBoard">
     <!-- <div id="0000" class="card" data-icon="bootstrap">
       <div class="card_front">
@@ -24,10 +31,19 @@
   </div>
 
   <div id="gameOver">
-    <div>Parabéns, você completou o jogo!</div>
-    <button id="restart" onclick="restart()">Jogar Novamente!</button>
+    <div class="mensagem">
+      <p>Parabéns, você completou o jogo!</p>
+      <button id="restart" onclick="restart()">Start Game</button>
+    </div>
   </div>
 
+  <!-- Sons do jogo !-->
+  <audio src="./assets/sound/card-start.mp3" preload="auto" id="card-start"></audio>
+  <audio src="./assets/sound/card-click.mp3" preload="auto" id="card-click"></audio>
+  <audio src="./assets/sound/card-check.mp3" preload="auto" id="card-check"></audio>
+  <audio src="./assets/sound/card-win.mp3" preload="auto" id="card-win"></audio>
+
+  <!-- JavaScript !-->
   <script src="./assets/js/game.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
