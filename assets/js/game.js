@@ -19,7 +19,7 @@ let game = {
       this.cards.push(this.createPairFromTech(tech));
     });
     this.cards = this.cards.flatMap((pair) => pair);
-    // this.shuffleCards();
+    this.shuffleCards();
     return this.cards;
   },
 
