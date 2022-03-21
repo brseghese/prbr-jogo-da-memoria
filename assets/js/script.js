@@ -12,6 +12,8 @@ function startGame() {
   let gameStartLayer = document.getElementById("gameStart");
   gameStartLayer.style.display = "none";
   cardStart.play();
+  stopTime();
+  verificarLocalStorage();
   startTime();
   initializeCards(game.createCardsFromTechs());
 }
@@ -65,10 +67,12 @@ function flipCard() {
   if (game.setCard(this.id)) {
     this.classList.add("flip");
     cardClick.play();
+
     if (game.secondCard) {
       if (game.checkMatch()) {
         game.clearCards();
         cardCheck.play();
+
         if (game.checkGameOver()) {
           let gameOverLayer = document.getElementById("gameOver");
           gameOverLayer.style.display = "flex";
@@ -81,7 +85,7 @@ function flipCard() {
             time
           )}`;
 
-          stopTime();
+          compararTime(time);
         }
       } else {
         setTimeout(() => {
@@ -99,6 +103,7 @@ function flipCard() {
 
 function restart() {
   game.clearCards();
+  compararTime(time);
   startGame();
   cardStart.play();
   let gameOverLayer = document.getElementById("gameOver");
@@ -110,8 +115,6 @@ function restart() {
 let interval;
 let time = 0;
 let timeP = document.getElementById("time");
-
-// startTime();
 
 function startTime() {
   let startTime = Date.now() - time;
@@ -140,6 +143,47 @@ function calculateTime(time) {
   let displayMinutes = totalMinutes.toString().padStart(2, "0");
 
   return `${displayMinutes}:${displaySeconds}`;
+}
+
+// ----------------------------------------------
+
+// localStorage.setItem("chave", "valor")
+// let chave = localStorage.getItem("chave")
+// localStorage.removeItem("chave")
+
+function verificarLocalStorage() {
+  if (localStorage.length) {
+    let timeStorage = localStorage.getItem("time");
+    let recorde = document.getElementById("recorde");
+    recorde.textContent = timeStorage;
+  } else {
+    // let zeroTime = localStorage.setItem("time", "00:00");
+    let recorde = document.getElementById("recorde");
+    recorde.textContent = "00:00";
+    // console.log(zeroTime);
+  }
+}
+
+function compararTime(time) {
+  let recorde = document.getElementById("recorde");
+  let timeStorage = localStorage.getItem("time");
+  let timeA = calculateTime(time);
+
+  let time1 = new Date("2022-01-01 " + timeStorage);
+  let time2 = new Date("2022-01-01 " + timeA);
+
+  console.log(time1);
+  console.log(time2);
+
+  if (time1 < time2) {
+    localStorage.setItem("time", timeStorage);
+    recorde.textContent = timeStorage;
+  } else {
+    localStorage.setItem("time", timeA);
+    recorde.textContent = timeA;
+  }
+  console.log(timeA);
+  console.log(timeStorage);
 }
 
 // ----------------------------------------------

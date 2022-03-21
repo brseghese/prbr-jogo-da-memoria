@@ -21,6 +21,11 @@ body {
   position: relative;
   transform-style: preserve-3d; /* faz com que indentifique o flip deixando o card 3d */
   transition: transform 0.5s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
 }
 
 .icon {
@@ -39,10 +44,15 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
   backface-visibility: hidden; /* esconde quando inverte eixo */
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .flip {
   transform: rotateY(180deg); /* inverte o eixo Y */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 
 .card_back {
@@ -53,6 +63,8 @@ body {
 .card_front {
   transform: rotateY(180deg); /* inicializa com o eixo Y invertido*/
   background-color: #101c2c;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 
 .mensagem {
@@ -65,6 +77,11 @@ body {
   border-radius: 10px;
   background-color: #111111;
   text-align: center;
+}
+
+.display {
+  display: flex;
+  gap: 10px;
 }
 
 #gameStart {

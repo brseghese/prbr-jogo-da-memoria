@@ -62,6 +62,7 @@ Não há necessidade de instalação, clique em [Start Game](https://brseghese.g
 ✅ Criei um preview das cartas abertas de 3 segundos no início do jogo. <br>
 ✅ Adicionei áudio no ínicio e fim de jogo, quando abre cartas e formam pares. <br>
 ✅ Desenvolvi o tempo de jogo, exibindo no layout e o total no final do jogo. <br>
+✅ Adicionei recorde de menor tempo que fica armazenado no localStorage. <br>
 ✅ Tratei da responsividade. <br>
 
 <h3 id="preview">🎥 Preview</h3>
