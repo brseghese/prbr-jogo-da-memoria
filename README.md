@@ -48,7 +48,7 @@ git clone https://github.com/brseghese/prbr-jogo-da-memoria.git
 
 <h3 id="instalacao">🛠️ Instalação</h3>
 
-Não há necessidade de instalação, clique em [Start Game](https://brseghese.github.io/progbr-jogo-da-memoria)🔗 para jogar.
+Não há necessidade de instalação, clique em [Start Game](https://brseghese.github.io/prbr-jogo-da-memoria)🔗 para jogar.
 
 ---
 
